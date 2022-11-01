@@ -5,6 +5,7 @@ import numpy as np
 import plotly.express as px
 
 
+# project specific charts with custom layout
 data = data_prep()
 options = list(zip(data.member_images['name'], data.member_images['email'], data.member_images['imageURL']))
 col1, col2, col3 = st.columns([.4, .2, .4])

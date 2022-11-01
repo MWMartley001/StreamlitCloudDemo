@@ -1,7 +1,19 @@
+# import configobj # for local development
 import azure.cosmos.cosmos_client as cosmos_client
 import pandas as pd
 import numpy as np
 import streamlit as st
+
+# For local development below
+# config = configobj.ConfigObj('.env')
+# CONFIG = {
+#     "ENDPOINT": config['ENDPOINT'],
+#     "KEY": config['KEY'],
+#     "DATABASE": config['DATABASE'],
+#     "CONT1": config['CONT1'],
+#     "CONT2": config['CONT2'],
+#     "CONT3": config['CONT3']
+#     }
 
 CONFIG = {
     "ENDPOINT": st.secrets['ENDPOINT'],
@@ -69,6 +81,7 @@ def data_prep():
     data.images_raw = data.get_container_data(data.container2, 'SELECT * FROM c')
     data.members_raw = data.get_container_data(data.container3, 'SELECT * FROM c')
 
+    # project specific data manipulations
     df_images = pd.DataFrame(data.images_raw)
     df_images = pd.concat([df_images, pd.DataFrame(list(df_images['keyvalues']))], axis=1)
     images = df_images.loc[:, df_images.columns.isin(["imageURL","uniqueId","collection"])]

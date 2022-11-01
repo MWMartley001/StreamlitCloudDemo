@@ -1,0 +1,9 @@
+azure-core==1.24.2
+azure-cosmos==4.3.0
+configobj==5.0.6
+jsonschema==4.9.0
+numpy==1.23.1
+pandas==1.4.3
+plotly==5.10.0
+plotly-express==0.4.1
+streamlit==1.11.1

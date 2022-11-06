@@ -8,14 +8,11 @@
 This is a boilerplate project from a streamlit app used for BI purposes on a web3 project. 
 ## Technologies
 ***
-A list of technologies used within the project:
 Azure Cosmos DB
 Python
 Streamlit 
 ## Installation
 ***
-A little intro about the installation. 
-```
 1. git clone https://github.com/MWMartley001/StreamlitCloudDemo.git
 FOR CLOUD DEPLOYMENT
 2. modify the secrets.toml file accordingly
@@ -31,7 +28,6 @@ FOR LOCAL DEVELOPMENT/TESTING
 5. modify the .env file using the same template as the secrets.toml file
 6. modify data_prep function in data.py according to your needs
 7. modify app.py according to your needs
-```
 ## Further information
 ***
 See the PDF Streamlit Cloud App for more info into the project it supports as well as visuals of the features.

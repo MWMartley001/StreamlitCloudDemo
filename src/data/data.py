@@ -16,14 +16,14 @@ import streamlit as st
 #     }
 
 # Comment out this version of CONFIG if you want to run pytests
-# CONFIG = {
-#     "ENDPOINT": st.secrets['ENDPOINT'],
-#     "KEY": st.secrets['KEY'],
-#     "DATABASE": st.secrets['DATABASE'],
-#     "CONT1": st.secrets['CONT1'],
-#     "CONT2": st.secrets['CONT2'],
-#     "CONT3": st.secrets['CONT3']
-# }
+CONFIG = {
+    "ENDPOINT": st.secrets['ENDPOINT'],
+    "KEY": st.secrets['KEY'],
+    "DATABASE": st.secrets['DATABASE'],
+    "CONT1": st.secrets['CONT1'],
+    "CONT2": st.secrets['CONT2'],
+    "CONT3": st.secrets['CONT3']
+}
 
 class CosmosData:
     def __init__(self, url, credential, database):

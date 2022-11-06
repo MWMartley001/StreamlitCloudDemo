@@ -1,4 +1,4 @@
-from data.data import data_prep
+from src.data.data import data_prep
 import streamlit as st
 import pandas as pd
 import numpy as np
